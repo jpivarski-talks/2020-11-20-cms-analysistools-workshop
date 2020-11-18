@@ -56,9 +56,39 @@
 
 % START START START START START START START START START START START START START
 
-\begin{frame}{First slide}
+\begin{frame}{Needless to say, CMS is already using Python a lot!}
 \vspace{0.5 cm}
-HERE
+\only<1>{\includegraphics[width=\linewidth]{01-github-cmssw-language.pdf}}\only<2>{\includegraphics[width=\linewidth]{05-github-anyroot-python-machinelearning-uproot.pdf}}
 \end{frame}
+
+\begin{frame}{But I'll be talking about the Scikit-HEP tools}
+\large
+
+\vspace{0.2 cm}
+\hfill \includegraphics[height=3 cm]{scikit-hep-logo.pdf}
+
+\vspace{-2 cm}
+\begin{itemize}\setlength{\itemsep}{0.2 cm}
+\item<1-> Experiment agnostic
+\item<2-> Connects to industry-standard ecosystem (NumPy, etc.)
+\item<3-> Provides capabilities that don't exist in the larger ecosystem
+
+\vspace{0.2 cm}
+\begin{itemize}\setlength{\itemsep}{0.2 cm}
+\item<4-> \normalsize because it's domain-specific: e.g.\ Lorentz vectors
+\item<5-> \normalsize because HEP is a pioneer: e.g.\ histograms-as-objects
+\end{itemize}
+
+\vspace{0 cm}
+\item<6-> Technical: focuses on columnar data to mitigate Python's speed issue
+
+\begin{uncoverenv}<6->
+\begin{center}
+\includegraphics[width=0.75\linewidth]{ease-vs-flexibility.pdf}
+\end{center}
+\end{uncoverenv}
+\end{itemize}
+\end{frame}
+
 
 \end{document}
