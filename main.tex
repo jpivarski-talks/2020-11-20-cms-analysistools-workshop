@@ -75,7 +75,7 @@
 
 \vspace{0.2 cm}
 \begin{itemize}\setlength{\itemsep}{0.2 cm}
-\item<4-> \normalsize because it's domain-specific: e.g.\ Lorentz vectors
+\item<4-> \normalsize because they're domain-specific: e.g.\ Lorentz vectors
 \item<5-> \normalsize because HEP is a pioneer: e.g.\ histograms-as-objects
 \end{itemize}
 
@@ -105,10 +105,10 @@
 \hfill \includegraphics[height=3 cm]{logo-pyhf.png}
 
 \vspace{-2 cm}
-CMS uses Combine and ATLAS uses HistFactory \\ for many-channel combined fits.
+CMS uses \textcolor{darkblue}{Combine} and ATLAS uses \textcolor{darkblue}{HistFactory} \\ for many-channel combined fits.
 
 \vspace{0.25 cm}
-pyhf is a Python implementation of HistFactory, \\ replacing RooFit with NumPy, TensorFlow, PyTorch, or JAX.
+\textcolor{darkblue}{pyhf} is a Python implementation of HistFactory, \\ replacing RooFit with NumPy, TensorFlow, PyTorch, or JAX.
 
 \vspace{0.25 cm}
 \begin{uncoverenv}<2->
@@ -162,7 +162,7 @@ See \textcolor{blue}{\url{https://indico.cern.ch/event/938677}} (CMS B2G meeting
 \begin{tabular}{p{0.2\linewidth} p{0 cm} p{0.7\linewidth}}
 \uncover<1->{\includegraphics[width=\linewidth]{logo-iminuit.pdf}} & & \uncover<1->{Use MINUIT directly in Python with a pleasant (and newly revamped) interface.} \\
 
-\uncover<2->{\includegraphics[width=\linewidth]{logo-zfit.png}} & & \uncover<2->{Aims to be the general purpose fitter with a Pythonic interface. Something to keep an eye on.} \\
+\uncover<2->{\includegraphics[width=\linewidth]{logo-zfit.png}} & & \uncover<2->{Aims to be the general purpose fitter with a Pythonic interface. Try it out: does it make your fits easier?} \\
 
 \uncover<3->{\includegraphics[width=\linewidth]{logo-mplhep.png}} & & \uncover<3->{Make various HEP-standard plots in Matplotlib that conform to CMS or ATLAS style. \hspace{3.5 cm} \linebreak \linebreak Suspiciously familiar logo.} \\
 
@@ -218,7 +218,7 @@ After Dec 1, ``\mintinline{python}{import uproot3 as uproot}'' if you need the o
 Currently passes pseudojets between Python and C++ as arrays, allows more efficient event-at-a-time access, rather than particle-at-a-time.
 
 \vspace{0.25 cm}
-Upgrade plans to pass jagged arrays of pseudojets and integrate with Awkward Array.
+Upgrade plans to pass jagged arrays of pseudojets and integrate with Awkward Array:
 
 \textcolor{blue}{\small \url{https://github.com/scikit-hep/pyjet/issues/31}}
 
