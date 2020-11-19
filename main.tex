@@ -98,6 +98,60 @@
 \end{columns}
 \end{frame}
 
+\begin{frame}{Things to know about: pyhf}
+\large
+
+\vspace{-0.2 cm}
+\hfill \includegraphics[height=3 cm]{logo-pyhf.png}
+
+\vspace{-2 cm}
+CMS uses Combine and ATLAS uses HistFactory \\ for many-channel combined fits.
+
+\vspace{0.25 cm}
+pyhf is a Python implementation of HistFactory, \\ replacing RooFit with NumPy, TensorFlow, PyTorch, or JAX.
+
+\vspace{0.25 cm}
+\begin{uncoverenv}<2->
+I'm mentioning this because the speedup is {\it dramatic} (even more so with GPUs).
+
+\renewcommand{\arraystretch}{1.2}
+
+\vspace{0.25 cm}
+\begin{columns}
+\column{0.4\linewidth}
+SUSY sbottom analysis \hfill {\small (CPU)}
+
+\vspace{0.1 cm}
+\begin{tabular}{l r l}
+\hline HistFactory & $>$ 50 & minutes \\
+pyhf-NumPy & 121 & \textcolor{gray}{seconds} \\
+pyhf-PyTorch & 31 & \textcolor{gray}{seconds} \\
+pyhf-JAX & 9 & \textcolor{gray}{seconds} \\
+\end{tabular}
+
+\column{0.4\linewidth}
+
+SUSY Wh 1$\ell$bb \hfill {\small (CPU)}
+
+\vspace{0.1 cm}
+\begin{tabular}{l r l}
+\hline HistFactory & $>$ 10 & minutes \\
+pyhf-NumPy & 39 & \textcolor{gray}{seconds} \\
+pyhf-PyTorch & 7 & \textcolor{gray}{seconds} \\
+pyhf-JAX & 4 & \textcolor{gray}{seconds} \\
+\end{tabular}
+\end{columns}
+
+\vspace{0.2 cm}
+\small
+See \textcolor{blue}{\url{https://indico.cern.ch/event/938677}} (CMS B2G meeting)
+\end{uncoverenv}
+
+\begin{uncoverenv}<3->
+\vspace{-3.9 cm}
+\hfill \includegraphics[height=4 cm]{pyhf-gpu.png}
+\end{uncoverenv}
+\end{frame}
 
 
 
