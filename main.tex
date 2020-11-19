@@ -205,11 +205,39 @@ After Dec 1, ``\mintinline{python}{import uproot3 as uproot}'' if you need the o
 \end{frame}
 
 \begin{frame}{Short update on pyjet and vector}
+\large
+\vspace{0.5 cm}
+\begin{columns}
+\column{0.3\linewidth}
+\hfill \includegraphics[width=0.9\linewidth]{logo-pyjet.pdf}
 
+\column{0.7\linewidth}
+\textcolor{darkblue}{\Large Array-based interface to FastJet.}
 
+\vspace{0.25 cm}
+Currently passes pseudojets between Python and C++ as arrays, allows more efficient event-at-a-time access, rather than particle-at-a-time.
 
+\vspace{0.25 cm}
+Upgrade plans to pass jagged arrays of pseudojets and integrate with Awkward Array.
 
+\textcolor{blue}{\small \url{https://github.com/scikit-hep/pyjet/issues/31}}
 
+\end{columns}
+
+\vspace{0.75 cm}
+\begin{uncoverenv}<2->
+\begin{columns}
+\column{0.3\linewidth}
+\hfill \includegraphics[width=0.9\linewidth]{logo-vector.pdf}
+
+\column{0.7\linewidth}
+\textcolor{darkblue}{\Large Array-based Lorentz vector calculations.}
+
+\vspace{0.25 cm}
+All the kinematic functions in NumPy, Awkward Array, Numba, and TensorFlow. Aiming for a minimal version by Dec 1 (excluding TensorFlow).
+
+\end{columns}
+\end{uncoverenv}
 \end{frame}
 
 \begin{frame}{Short update on boost-histogram and hist}
