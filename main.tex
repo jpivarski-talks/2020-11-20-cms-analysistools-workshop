@@ -174,21 +174,58 @@ See \textcolor{blue}{\url{https://indico.cern.ch/event/938677}} (CMS B2G meeting
 \begin{frame}{Things to know about: Numba, Xarray, Zarr, Dask, Ray}
 \large
 
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 
+\vspace{0.1 cm}
 \begin{tabular}{p{0.1\linewidth} p{0 cm} p{0.8\linewidth}}
 \uncover<1->{\includegraphics[width=1\linewidth]{logo-numba.png}\vspace{-0.4 cm}} & & \uncover<1->{JIT-compiler for Python: decorate a function with \mintinline{python}{@numba.jit} and it runs at the speed of C code. Some restrictions apply.} \\
 
 \uncover<2->{\includegraphics[width=1\linewidth]{logo-xarray.png}\vspace{-0.4 cm}} & & \uncover<2->{Tracks metadata for the axes of an N-dimensional array, so you can slice it in natural units; built-in Zarr and Dask integration. \linebreak No jagged arrays---yet. (Awkward-Xarray integration?)} \\
 
-\uncover<3->{\includegraphics[width=1\linewidth]{logo-zarr.png}\vspace{-0.4 cm}} & & \uncover<3->{Delivers slices of an array dataset to distributed jobs.} \\
+\uncover<3->{\includegraphics[width=1\linewidth]{logo-zarr.png}\vspace{-0.4 cm}} & & \uncover<3->{Delivers slices of an array dataset to distributed jobs. \linebreak Also considering Awkward Array integration.} \\
 
-\uncover<4->{\includegraphics[width=1\linewidth]{logo-dask.png}\vspace{-0.4 cm}} & & \uncover<4->{Distributed processing with (and without) an array interface. \linebreak Records lazy calculations and replays them on remote workers.} \\
+\uncover<4->{\includegraphics[width=1\linewidth]{logo-dask.png}\vspace{-0.4 cm}} & & \uncover<4->{Distributed processing with (and without) an array interface. \linebreak Records lazy calculations and replays them on remote workers. \linebreak Also considering Awkward Array integration.} \\
 
 \uncover<5->{\includegraphics[width=1\linewidth]{logo-ray.png}\vspace{-0.4 cm}} & & \uncover<5->{More robust distributed processing layer; can be used with Dask.} \\
 
 \end{tabular}
 \end{frame}
 
+\begin{frame}{Short update on Uproot and Awkward Array}
+\includegraphics[width=\linewidth]{uproot-awkward-timeline.pdf}
+
+\begin{uncoverenv}<2->
+\vspace{-4.28 cm}
+\includegraphics[height=4.28 cm]{Raiders-of-the-Lost-Ark-Chamber.jpg}
+
+\begin{center}
+After Dec 1, ``\mintinline{python}{import uproot3 as uproot}'' if you need the old one.
+\end{center}
+\end{uncoverenv}
+\end{frame}
+
+\begin{frame}{Short update on pyjet and vector}
+
+
+
+
+
+\end{frame}
+
+\begin{frame}{Short update on boost-histogram and hist}
+
+
+
+
+
+\end{frame}
+
+\begin{frame}{}
+\Huge
+\vspace{1 cm}
+\begin{center}
+\textcolor{darkblue}{Questions?}
+\end{center}
+\end{frame}
 
 \end{document}
