@@ -171,7 +171,24 @@ See \textcolor{blue}{\url{https://indico.cern.ch/event/938677}} (CMS B2G meeting
 \end{tabular}
 \end{frame}
 
+\begin{frame}{Things to know about: Numba, Xarray, Zarr, Dask, Ray}
+\large
 
+\renewcommand{\arraystretch}{1.2}
+
+\begin{tabular}{p{0.1\linewidth} p{0 cm} p{0.8\linewidth}}
+\uncover<1->{\includegraphics[width=1\linewidth]{logo-numba.png}\vspace{-0.4 cm}} & & \uncover<1->{JIT-compiler for Python: decorate a function with \mintinline{python}{@numba.jit} and it runs at the speed of C code. Some restrictions apply.} \\
+
+\uncover<2->{\includegraphics[width=1\linewidth]{logo-xarray.png}\vspace{-0.4 cm}} & & \uncover<2->{Tracks metadata for the axes of an N-dimensional array, so you can slice it in natural units; built-in Zarr and Dask integration. \linebreak No jagged arrays---yet. (Awkward-Xarray integration?)} \\
+
+\uncover<3->{\includegraphics[width=1\linewidth]{logo-zarr.png}\vspace{-0.4 cm}} & & \uncover<3->{Delivers slices of an array dataset to distributed jobs.} \\
+
+\uncover<4->{\includegraphics[width=1\linewidth]{logo-dask.png}\vspace{-0.4 cm}} & & \uncover<4->{Distributed processing with (and without) an array interface. \linebreak Records lazy calculations and replays them on remote workers.} \\
+
+\uncover<5->{\includegraphics[width=1\linewidth]{logo-ray.png}\vspace{-0.4 cm}} & & \uncover<5->{More robust distributed processing layer; can be used with Dask.} \\
+
+\end{tabular}
+\end{frame}
 
 
 \end{document}
