@@ -240,12 +240,41 @@ All the kinematic functions in NumPy, Awkward Array, Numba, and TensorFlow. Aimi
 \end{uncoverenv}
 \end{frame}
 
-\begin{frame}{Short update on boost-histogram and hist}
+\begin{frame}[fragile]{Short update on boost-histogram and hist}
+\large
+\vspace{0.5 cm}
+\begin{columns}
+\column{0.3\linewidth}
+\hfill \includegraphics[width=0.9\linewidth]{logo-hist.pdf}
 
+\column{0.7\linewidth}
+\textcolor{darkblue}{\Large Histograms as accumulatable objects.}
 
+\vspace{0.25 cm}
+Histograms with a \mintinline{python}{fill} method are now a maintained part of Boost (C++ header-only library) and the Python interface is mature.
 
+\end{columns}
 
+\vspace{0.75 cm}
+\begin{uncoverenv}<2->
+\begin{columns}
+\column{0.55\linewidth}
+\includegraphics[width=\linewidth]{hist-docs.png}
 
+\column{0.45\linewidth}
+The \textcolor{darkblue}{hist} library wraps Boost Histogram in a ready-for-analysis way, bringing in all the plotting and statistical tools with
+
+\vspace{0.25 cm}
+\begin{minted}{python}
+>>> import hist
+\end{minted}
+
+\vspace{0.25 cm}
+Fully documented:
+
+\textcolor{blue}{\small \url{https://hist.readthedocs.io/}}
+\end{columns}
+\end{uncoverenv}
 \end{frame}
 
 \begin{frame}{}
@@ -253,6 +282,14 @@ All the kinematic functions in NumPy, Awkward Array, Numba, and TensorFlow. Aimi
 \vspace{1 cm}
 \begin{center}
 \textcolor{darkblue}{Questions?}
+\end{center}
+\end{frame}
+
+\begin{frame}{Next up:}
+\Huge
+\vspace{0.75 cm}
+\begin{center}
+\includegraphics[width=0.35\linewidth]{logo-coffea.pdf}
 \end{center}
 \end{frame}
 
